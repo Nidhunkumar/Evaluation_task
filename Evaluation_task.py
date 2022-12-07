@@ -23,3 +23,13 @@ Output
 
 
 '''
+def solution(row,column):
+  if row <= 0 or column <=0:
+    print(f'matrix dimension  should be grater than Zero ')
+  else:
+    items = list(range(1, row*column+1))
+    for i in range(0,len(items),row):
+      result=list(items[i:i+row])
+      print(result)
+
+solution(3,3)
